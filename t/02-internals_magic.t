@@ -10,7 +10,7 @@
 #                which result from the "magic" mode of Getopt::Auto
 #
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
-#      VERSION:  1.9.6
+#      VERSION:  1.9.7
 #      CREATED:  07/06/2009 03:27:58 PM PDT
 #===============================================================================
 
@@ -22,7 +22,7 @@ use Test::Output qw{ stderr_from };
 use Getopt::Auto( { 'test' => 1 } );
 
 use 5.006;
-our $VERSION = '1.9.6';
+our $VERSION = '1.9.7';
 my $me = q{02-internals_magic.t}; # The directory path is unimportant
 
 ## no critic (RestrictLongStrings)
@@ -105,7 +105,7 @@ This is the built-in help, exiting
 
 @ARGV = qw(--help);
 $stderr = stderr_from( \&Getopt::Auto::_parse_args );
-$stderr =~ s{\S+$me}{$me}gxism;   
+$stderr =~ s{\S+$me}{$me}gxism; 
 is( $stderr, $help, 'Check help' );
 
 $help = "This is $me version $VERSION

@@ -12,7 +12,7 @@
 #                is able to execute/access in packages other than main.
 #
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
-#      VERSION:  1.9.6
+#      VERSION:  1.9.7
 #      CREATED:  Mon Aug 10 14:15:20 PDT 2009
 #===============================================================================
 
@@ -24,7 +24,7 @@ use warnings;
 use Test::More tests => 7;
 
 use 5.006;
-our $VERSION = '1.9.6';
+our $VERSION = '1.9.7';
 
 ## no critic (RequireLocalizedPunctuationVars)
 ## no critic (ProhibitPackageVars)

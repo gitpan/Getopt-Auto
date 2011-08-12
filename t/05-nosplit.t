@@ -13,7 +13,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
 #      COMPANY:
-#      VERSION:  1.9.6
+#      VERSION:  1.9.7
 #      CREATED:  Tue Dec 29 16:13:06 PST 2009
 #     REVISION:  ---
 #===============================================================================
@@ -30,7 +30,7 @@ use Test::Output;
 ## no critic (ProhibitPackageVars)
 
 use 5.006;
-our $VERSION = '1.9.6';
+our $VERSION = '1.9.7';
 our %options;
 
 use Getopt::Auto( { 'nobundle' => 1, 'nohelp' => 1 } );

@@ -10,7 +10,7 @@
 #                We don't go further here, as those tests require some magic.
 #
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
-#      VERSION:  1.9.6
+#      VERSION:  1.9.7
 #      CREATED:  07/06/2009 03:27:58 PM PDT
 #===============================================================================
 
@@ -20,7 +20,7 @@ use warnings;
 use Test::More tests => 1;
 
 use 5.006;
-our $VERSION = '1.9.6';
+our $VERSION = '1.9.7';
 
 # use_ok( 'Getopt::Auto'). Interaction with Test::More results
 # in execution errors if its not done in a BEGIN block.

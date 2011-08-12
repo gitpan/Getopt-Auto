@@ -13,7 +13,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), geoff@hughes.net
 #      COMPANY:
-#      VERSION:  1.9.6
+#      VERSION:  1.9.7
 #      CREATED:  11/05/2009 04:31:11 PM
 #     REVISION:  ---
 #===============================================================================
@@ -22,11 +22,12 @@ use strict;
 use warnings;
 
 use Test::More tests => 6;
-use Test::Output;
+use Test::Output qw{ stderr_from };
 use Getopt::Auto( { test => 1 } );
 
 use 5.006;
-our $VERSION = '1.9.6';
+our $VERSION = '1.9.7';
+my $me = '03-options_text.t';
 
 ## no critic (ProhibitImplicitNewlines)
 ## no critic (ProtectPrivateSubs)
@@ -111,22 +112,24 @@ is_deeply( Getopt::Auto::_get_options_ref(),
     \%ex_options, '... and gets converted to options OK' );
 
 @ARGV = qw(--foo --bar --tar --far);
-stderr_is(
-    \&Getopt::Auto::_parse_args,
+my $help =
     "Getopt::Auto: --far is not a registered option\n" .
-    "This is t/03-options_text.t version 1.9.6\n" .
+    "This is $me version $VERSION\n" .
     "\n" .
-    "t/03-options_text.t --bar - do a bar\n" .
-    "t/03-options_text.t --foo - do a foo [*]\n" .
-    "t/03-options_text.t --help - This text\n" .
-    "t/03-options_text.t --tar\n" .
-    "t/03-options_text.t --version - Prints the version number\n" .
+    "$me --bar - do a bar\n" .
+    "$me --foo - do a foo [*]\n" .
+    "$me --help - This text\n" .
+    "$me --tar\n" .
+    "$me --version - Prints the version number\n" .
     "\n" .
     "More help is available on the topics marked with [*]\n" .
-    "Try t/03-options_text.t --help --foo\n" .
-    "This is the built-in help, exiting\n" ,
-    '--far is not a registered option'
-);
+    "Try $me --help --foo\n" .
+    "This is the built-in help, exiting\n";
+
+my $stderr = stderr_from( \&Getopt::Auto::_parse_args );
+$stderr =~ s{\S+$me}{$me}gxism; 
+is( $stderr, $help, '--far is not a registered option' );
+
 ok( $is_foo_called, 'Sub foo() was called' );
 ok( $is_bar_called, 'Sub bar() was called' );
 ok( $is_tar_called, 'Sub tar() was called' );

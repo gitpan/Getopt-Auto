@@ -11,7 +11,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
 #      COMPANY:
-#      VERSION:  1.9.6
+#      VERSION:  1.9.7
 #      CREATED:  Fri Oct  8 16:16:29 PDT 2010
 #     REVISION:  ---
 #===============================================================================
@@ -20,11 +20,12 @@ use strict;
 use warnings;
 
 use Test::More tests => 3;
-use Test::Output;
+use Test::Output qw{ stderr_from };
 use Getopt::Auto( { 'test' => 1 } );
 
 use 5.006;
-our $VERSION = '1.9.6';
+our $VERSION = '1.9.7';
+my $me = '01-help.t';
 
 ## no critic (ProhibitImplicitNewlines)
 ## no critic (ProtectPrivateSubs)
@@ -44,15 +45,16 @@ my $is_foo_called = 0;
 sub foo { ++$is_foo_called; return; }
 
 @ARGV = qw( -x --foo );
-stderr_is(
-    \&Getopt::Auto::_parse_args,
+my $help =
     "Getopt::Auto: -x is not a registered option\n" .
-    "This is t/01-help.t version $VERSION\n\n" .
-    "t/01-help.t --foo - do a foo\n\n" .
+    "This is $me version $VERSION\n\n" .
+    "$me --foo - do a foo\n\n" .
     "Test\n\n" .
-    "This is the built-in help, exiting\n",
-    '-x not registered'
-);
+    "This is the built-in help, exiting\n";
+
+my $stderr = stderr_from( \&Getopt::Auto::_parse_args );
+$stderr =~ s{\S+$me}{$me}gxism; 
+is( $stderr, $help, 'Check -x not registered' );
 ok( $is_foo_called == 0, 'Sub foo() was not called' );
 isnt( $options{'x'}, 1, 'option "x" was not set' );
 

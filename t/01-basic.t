@@ -11,7 +11,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
 #      COMPANY:
-#      VERSION:  1.9.6
+#      VERSION:  1.9.7
 #      CREATED:  07/06/2009 03:27:58 PM PDT
 #     REVISION:  ---
 #===============================================================================
@@ -24,7 +24,7 @@ use Test::Output;
 use Getopt::Auto( { test => 1, nohelp=>1 } );
 
 use 5.006;
-our $VERSION = '1.9.6';
+our $VERSION = '1.9.7';
 
 ## no critic (ProhibitImplicitNewlines)
 ## no critic (ProtectPrivateSubs)

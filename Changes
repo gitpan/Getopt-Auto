@@ -57,3 +57,6 @@ Revision history for Perl extension Getopt::Auto.
     the directory path when making comparisions. The path is
     irrelevant in any case. Thanks to Perl Monks ikegami and
     Corion who commented on node_id=917637.
+
+1.9.7 Mon Aug  1 16:54:33 PDT 2011
+    Found more embedded 't/' - t/01-help.t and t/03-options-split_partial.t

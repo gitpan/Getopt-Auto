@@ -4,7 +4,7 @@
 #
 #===============================================================================
 #
-#         FILE:  t/03-options-split_partial.t
+#         FILE:  03-options-split_partial.t
 #
 #  DESCRIPTION:  Test splitting a short option where there's a sub for one of the components
 #
@@ -13,7 +13,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
 #      COMPANY:
-#      VERSION:  1.9.6
+#      VERSION:  1.9.7
 #      CREATED:  Tue Dec 29 16:12:56 PST 2009
 #     REVISION:  ---
 #===============================================================================
@@ -30,7 +30,7 @@ use Test::Output;
 ## no critic (ProtectPrivateSubs)
 
 use 5.006;
-our $VERSION = '1.9.6';
+our $VERSION = '1.9.7';
 our %options;
 
 use Getopt::Auto{ 'nohelp' => 1 };

@@ -9,7 +9,7 @@
 #  DESCRIPTION:  Test combinations of 'long' ('--') run-time options
 #
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
-#      VERSION:  1.9.6
+#      VERSION:  1.9.7
 #      CREATED:  07/06/2009 03:27:58 PM PDT
 #===============================================================================
 
@@ -20,7 +20,7 @@ use Test::More tests => 17;
 use Test::Output;
 
 use 5.006;
-our $VERSION = '1.9.6';
+our $VERSION = '1.9.7';
 
 ## no critic (RequireLocalizedPunctuationVars)
 ## no critic (ProhibitPackageVars)

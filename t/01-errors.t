@@ -12,7 +12,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
 #      COMPANY:
-#      VERSION:  1.9.6
+#      VERSION:  1.9.7
 #      CREATED:  Tue Nov 10 10:30:32 PST 2009
 #     REVISION:  ---
 #===============================================================================
@@ -24,7 +24,7 @@ use Test::More tests => 6;
 use Test::Output;
 
 use 5.006;
-our $VERSION = '1.9.6';
+our $VERSION = '1.9.7';
 
 ## no critic (ProhibitMagicNumbers))
 ## no critic (ProhibitImplicitNewlines))
