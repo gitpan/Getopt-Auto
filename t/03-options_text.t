@@ -13,7 +13,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), geoff@hughes.net
 #      COMPANY:
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  11/05/2009 04:31:11 PM
 #     REVISION:  ---
 #===============================================================================
@@ -26,7 +26,7 @@ use Test::Output qw{ stderr_from };
 use Getopt::Auto( { test => 1 } );
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 my $me = '03-options_text.t';
 
 ## no critic (ProhibitImplicitNewlines)

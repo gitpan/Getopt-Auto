@@ -18,7 +18,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), geoff@hughes.net
 #      COMPANY:
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  11/05/2009 04:32:25 PM
 #     REVISION:  ---
 #===============================================================================
@@ -27,7 +27,7 @@ use strict;
 use warnings;
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 
 use Test::More tests => 5;
 

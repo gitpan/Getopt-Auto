@@ -11,7 +11,7 @@
 #                when running multiple files
 #
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  07/06/2009 03:27:58 PM PDT
 #===============================================================================
 
@@ -25,7 +25,7 @@ use lib 't';
 use Internals_magic_multi;
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 
 ## no critic (ProhibitImplicitNewlines)
 ## no critic (RequireLocalizedPunctuationVars)

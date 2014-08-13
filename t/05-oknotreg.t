@@ -9,7 +9,7 @@
 #  DESCRIPTION:  Validate the oknotreg option`
 #
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  Wed Dec  2 13:05:25 PST 2009
 #===============================================================================
 
@@ -20,7 +20,7 @@ use Test::More tests => 2;
 use Test::Output;
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 
 ## no critic (RequireLocalizedPunctuationVars)
 ## no critic (ProhibitPackageVars)

@@ -34,3 +34,5 @@ t/05-noshort.t
 t/05-nosplit.t
 t/05-oknotreg.t
 t/Internals_magic_multi.pm
+META.yml
+META.json

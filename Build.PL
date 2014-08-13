@@ -8,7 +8,9 @@ my $builder = Module::Build->new(
 	dist_author        => 'Geoffrey Leach <geoff@hughes.net>',
     dist_version_from  => 'lib/Getopt/Auto.pm',
     dist_abstract      => 'An easy way to organize a script to handle whatever option mechanism it requires.',
-	requires           => { 'File::Spec'            => 0,
+	requires           => {
+                            'perl'                  => '5.6.0',
+                            'File::Spec'            => 0,
                             'File::Basename'        => 0,
                             'File::Spec::Functions' => 0,
                             'Readonly'              => 0,

@@ -10,7 +10,7 @@
 #                which result from the "magic" mode of Getopt::Auto
 #
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  07/06/2009 03:27:58 PM PDT
 #===============================================================================
 
@@ -22,7 +22,7 @@ use Test::Output qw{ stderr_from };
 use Getopt::Auto( { 'test' => 1 } );
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 my $me = q{02-internals_magic.t}; # The directory path is unimportant
 
 ## no critic (RestrictLongStrings)

@@ -13,7 +13,7 @@
 # REQUIREMENTS:  --- See Build.PL
 #         BUGS:  --- Hah!
 #       AUTHOR:  Geoffrey Leach (), geoff@hughes.net
-#      VERSION:  1.9.7
+#      VERSION:  1.9.9
 #     REVISION:  ---
 #===============================================================================
 
@@ -42,7 +42,7 @@ Readonly::Scalar my $LONG    => 2;
 Readonly::Array my @TYPES    => qw( bare short long );
 Readonly::Array my @PREFIXES => ( $EMPTY, $DASH, $DDASH );
 
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.9';
 
 # Perlcritic complains about print to STDOUT. As this is merely for
 # diagnostic purposes, it seems futile to fix them.
@@ -560,8 +560,8 @@ sub _split_arg {
 sub _is_registered {
     my $arg = shift;
 
-    return ( exists $options{$arg} )
-        and ( exists $options{$arg}{'registered'} );
+    return ( ( exists $options{$arg} )
+        and ( exists $options{$arg}{'registered'} ) );
 }
 
 sub _notreg {
@@ -1700,7 +1700,7 @@ removed in future versions unless someone makes a fuss.
 
 =head1 VERSION
 
-Version 1.9.7
+Version 1.9.9
 
 =head1 AUTHOR
 

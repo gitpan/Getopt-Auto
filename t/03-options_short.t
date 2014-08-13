@@ -10,7 +10,7 @@
 #                We also check options with POD formatting attached
 #
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  Sun Aug  9 16:38:44 PDT 2009
 #===============================================================================
 
@@ -21,7 +21,7 @@ use Test::More tests => 24;
 use Test::Output;
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 
 ## no critic (RequireLocalizedPunctuationVars)
 ## no critic (ProhibitPackageVars)

@@ -11,7 +11,7 @@
 #                Also, there's no way to split a bare option into letters.
 #
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  Mon Aug 10 13:28:07 PDT 2009
 #===============================================================================
 
@@ -22,7 +22,7 @@ use Test::More tests => 14;
 use Test::Output;
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 
 ## no critic (ProhibitImplicitNewlines)
 ## no critic (ProtectPrivateSubs)

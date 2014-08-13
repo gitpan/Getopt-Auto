@@ -10,7 +10,7 @@
 #                which result from the "non-magic" mode of Getopt::Auto
 #
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  Fri Aug  7 14:04:29 PDT 2009
 #===============================================================================
 
@@ -18,7 +18,7 @@ use strict;
 use warnings;
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 
 use Test::More tests => 3;
 

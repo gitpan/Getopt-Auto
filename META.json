@@ -1,0 +1,55 @@
+{
+   "abstract" : "An easy way to organize a script to handle whatever option mechanism it requires.",
+   "author" : [
+      "Geoffrey Leach <geoff@hughes.net>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.131560",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Getopt-Auto",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0",
+            "Test::Output" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.40"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "File::Basename" : "0",
+            "File::Spec" : "0",
+            "File::Spec::Functions" : "0",
+            "Pod::Usage" : "0",
+            "Readonly" : "0",
+            "perl" : "v5.6.0"
+         }
+      }
+   },
+   "provides" : {
+      "Getopt::Auto" : {
+         "file" : "lib/Getopt/Auto.pm",
+         "version" : "v1.9.9"
+      },
+      "Getopt::Auto::PodExtract" : {
+         "file" : "lib/Getopt/Auto.pm"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "v1.9.9"
+}

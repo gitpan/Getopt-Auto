@@ -13,7 +13,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
 #      COMPANY:
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  Fri Dec  4 10:52:26 PST 2009
 #     REVISION:  ---
 #===============================================================================
@@ -24,7 +24,7 @@ use warnings;
 use Test::More tests => 9;    # last test to print
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 
 ## no critic (RequireLocalizedPunctuationVars)
 ## no critic (ProtectPrivateSubs)

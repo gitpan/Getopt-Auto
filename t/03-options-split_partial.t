@@ -13,7 +13,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
 #      COMPANY:
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  Tue Dec 29 16:12:56 PST 2009
 #     REVISION:  ---
 #===============================================================================
@@ -30,7 +30,7 @@ use Test::Output;
 ## no critic (ProtectPrivateSubs)
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 our %options;
 
 use Getopt::Auto{ 'nohelp' => 1 };

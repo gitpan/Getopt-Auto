@@ -11,7 +11,7 @@
 #        NOTES:  ---
 #       AUTHOR:  Geoffrey Leach (), <geoff@hughes.net>
 #      COMPANY:
-#      VERSION:  1.9.7
+#      VERSION:  1.9.8
 #      CREATED:  Fri Oct  8 16:16:29 PDT 2010
 #     REVISION:  ---
 #===============================================================================
@@ -24,7 +24,7 @@ use Test::Output qw{ stderr_from };
 use Getopt::Auto( { 'test' => 1 } );
 
 use 5.006;
-our $VERSION = '1.9.7';
+our $VERSION = '1.9.8';
 my $me = '01-help.t';
 
 ## no critic (ProhibitImplicitNewlines)
