@@ -19,6 +19,8 @@ my $builder = Module::Build->new(
 	build_requires     => { 'Test::More'            => 0,
                             'Test::Output'          => 0,
 },
+    configure_requires => { 'Module::Build'         => 0.42,
+},
 	add_to_cleanup     => [ 'Getopt-Auto-*' ],
  	create_makefile_pl => 'traditional',
 );
